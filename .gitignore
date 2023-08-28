@@ -1,0 +1,35 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# System files
+.DS_Store
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore all .tfvars files that end with .auto.tfvars which are generally used for
+# automatic settings in your working environment
+*.auto.tfvars
+
+# Ignore packer files
+packer_cache/
+
+# Ignore all secrets
+*.pem
+*.pub
+private_key.pem
