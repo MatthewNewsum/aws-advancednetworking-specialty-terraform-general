@@ -17,11 +17,11 @@ terraform {
     }
   }
 
-  #   backend "s3" {
-  #     bucket         = "tf-state-mattn-a4l"
-  #     key            = "nwspecialty/terraform.tfstate"
-  #     region         = "us-east-1"
-  #     dynamodb_table = "tf-locks"
-  #     encrypt        = true
-  #   }
+  backend "s3" {
+    bucket         = "tf-state-mattn-a4l"
+    key            = "terraform/general/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "tf_locks"
+    encrypt        = true
+  }
 }
